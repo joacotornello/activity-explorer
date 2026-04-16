@@ -15,6 +15,9 @@ const contentLines = [
   ['94%', '68%'],
 ] as const;
 
+/***
+ * A loading state component for the activity feed, displaying skeletons for a list of activity cards.
+ */
 const FeedLoadingState = ({
   cardCount = 6,
   label = t('feed.state.loading'),

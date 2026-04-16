@@ -3,6 +3,7 @@ import { axe } from 'jest-axe';
 
 import { QueryProvider } from '../../providers/QueryProvider';
 import { createQueryClient } from '../../providers/QueryProvider.handlers';
+import { mockWindowMatchMedia } from '../../../test/matchMedia';
 import { ActivityExplorerPage } from './ActivityExplorerPage';
 
 type MockResponseInput = {
@@ -139,19 +140,7 @@ describe('ActivityExplorerPage a11y', () => {
   });
 
   it('has no critical axe violations with mobile note details dialog open', async () => {
-    Object.defineProperty(window, 'matchMedia', {
-      configurable: true,
-      writable: true,
-      value: jest.fn(() => ({
-        addEventListener: jest.fn(),
-        addListener: jest.fn(),
-        matches: false,
-        media: '(min-width: 1181px)',
-        onchange: null,
-        removeEventListener: jest.fn(),
-        removeListener: jest.fn(),
-      })),
-    });
+    mockWindowMatchMedia({ matches: false });
     mockSuccessfulRequests();
 
     const { container } = renderActivityExplorerPage();

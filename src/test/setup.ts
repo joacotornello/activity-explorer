@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
 import { toHaveNoViolations } from 'jest-axe';
+import { mockWindowMatchMedia } from './matchMedia';
 
 expect.extend(toHaveNoViolations);
 
@@ -15,4 +16,8 @@ Object.defineProperty(global, 'ResizeObserver', {
   configurable: true,
   writable: true,
   value: MockResizeObserver,
+});
+
+beforeEach(() => {
+  mockWindowMatchMedia();
 });

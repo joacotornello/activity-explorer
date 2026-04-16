@@ -74,6 +74,12 @@ body {
   align-items: stretch;
 }
 
+.app-feed-view {
+  display: grid;
+  padding-top: var(--spacing-xs);
+  background: var(--surface-canvas);
+}
+
 @media (max-width: 1180px) {
   .app-activity-explorer-page__layout {
     grid-template-columns:
@@ -86,6 +92,12 @@ body {
   .app-activity-explorer-page {
     height: 100%;
     min-height: 0;
+  }
+
+  .app-feed-view {
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr);
   }
 
   .app-activity-explorer-page__layout {

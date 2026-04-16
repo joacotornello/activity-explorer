@@ -15,10 +15,6 @@ import type {
 } from '../model';
 
 const getInitialActivityExplorerQueryState = (): ActivityFeedUrlState => {
-  if (typeof window === 'undefined') {
-    return defaultActivityFeedUrlState;
-  }
-
   return parseActivityFeedSearchParams(window.location.search);
 };
 
@@ -80,10 +76,6 @@ const getActiveFilterCount = (filters: FiltersState): number =>
 const syncActivityExplorerSearchParams = (
   queryState: ActivityFeedUrlState,
 ): void => {
-  if (typeof window === 'undefined') {
-    return;
-  }
-
   const nextSearch = stringifyActivityFeedSearchParams(queryState);
 
   if (window.location.search === nextSearch) {
@@ -98,10 +90,6 @@ const syncActivityExplorerSearchParams = (
 const getActivityExplorerCanonicalUrl = (
   queryState: ActivityFeedUrlState,
 ): string | null => {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-
   const nextSearch = stringifyActivityFeedSearchParams(queryState);
 
   return new URL(
@@ -113,10 +101,6 @@ const getActivityExplorerCanonicalUrl = (
 const syncActivityExplorerDocumentMetadata = (
   queryState: ActivityFeedUrlState,
 ): void => {
-  if (typeof document === 'undefined') {
-    return;
-  }
-
   document.title = t('app.meta.title');
 
   const canonicalUrl = getActivityExplorerCanonicalUrl(queryState);
@@ -153,14 +137,6 @@ const getNextSelectedNoteId = (
 const activityExplorerDesktopMediaQuery = '(min-width: 1181px)';
 
 const getIsDesktopActivityExplorerLayout = (): boolean => {
-  if (typeof window === 'undefined') {
-    return true;
-  }
-
-  if (typeof window.matchMedia !== 'function') {
-    return true;
-  }
-
   return window.matchMedia(activityExplorerDesktopMediaQuery).matches;
 };
 

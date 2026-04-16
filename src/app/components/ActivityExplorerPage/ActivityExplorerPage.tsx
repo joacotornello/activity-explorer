@@ -17,7 +17,6 @@ import { Surface } from '@shared/ui/atomic/Surface';
 import { VisuallyHidden } from '@shared/ui/atomic/VisuallyHidden';
 import { EmptyState } from '@shared/ui/composite/EmptyState';
 import { ExplorerHeader } from '../ExplorerHeader';
-import { FeedView } from '../FeedView';
 import { FeedLoadingState } from '../FeedLoadingState';
 import { FiltersSidebar } from '../FiltersSidebar';
 import { FiltersSidebarLoading } from '../FiltersSidebarLoading';
@@ -38,7 +37,11 @@ import {
   toggleColorFilter,
 } from './ActivityExplorerPage.handlers';
 import './ActivityExplorerPage.scss';
+import { VirtualizedNoteList } from '../VirtualizedNoteList';
 
+/**
+ * Main component for the Activity Explorer page, responsible for rendering the filters sidebar, activity feed, and note details panel, as well as managing the state and interactions between these components.
+ */
 const ActivityExplorerPage = () => {
   const [queryState, setQueryState] = useState(
     getInitialActivityExplorerQueryState,
@@ -100,10 +103,6 @@ const ActivityExplorerPage = () => {
   }, [queryState]);
 
   useEffect(() => {
-    if (typeof window === 'undefined') {
-      return undefined;
-    }
-
     const handlePopState = () => {
       setQueryState(getInitialActivityExplorerQueryState());
     };
@@ -130,10 +129,6 @@ const ActivityExplorerPage = () => {
   }, [isDesktopLayout, selectedNoteId]);
 
   useEffect(() => {
-    if (typeof window === 'undefined') {
-      return undefined;
-    }
-
     if (typeof window.matchMedia !== 'function') {
       return undefined;
     }
@@ -183,7 +178,7 @@ const ActivityExplorerPage = () => {
 
     setPreferredSelectedNoteId(null);
 
-    if (!noteIdToRestore || !isDesktopLayout || typeof window === 'undefined') {
+    if (!noteIdToRestore || !isDesktopLayout) {
       return;
     }
 
@@ -317,18 +312,24 @@ const ActivityExplorerPage = () => {
               />
             </Surface>
           ) : (
-            <FeedView
-              hasMore={notesQuery.hasNextPage ?? false}
-              hasLoadMoreError={notesQuery.isFetchNextPageError}
-              isLoadingMore={notesQuery.isFetchingNextPage}
-              notes={notes}
-              onLoadMore={handleLoadMoreNotes}
-              onRetryLoadMore={() => {
-                void notesQuery.fetchNextPage();
-              }}
-              selectedNoteId={selectedNoteId}
-              onSelectNote={setPreferredSelectedNoteId}
-            />
+            <section
+              aria-labelledby="activity-feed-title"
+              className="app-feed-view"
+            >
+              <VirtualizedNoteList
+                ariaLabel={t('feed.aria.list')}
+                hasMore={notesQuery.hasNextPage ?? false}
+                hasLoadMoreError={notesQuery.isFetchNextPageError}
+                isLoadingMore={notesQuery.isFetchingNextPage}
+                notes={notes}
+                onLoadMore={handleLoadMoreNotes}
+                onRetryLoadMore={() => {
+                  void notesQuery.fetchNextPage();
+                }}
+                selectedNoteId={selectedNoteId}
+                onSelectNote={setPreferredSelectedNoteId}
+              />
+            </section>
           )}
         </main>
 

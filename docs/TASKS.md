@@ -80,7 +80,6 @@ Path note: file paths below follow current repo structure first. When implementa
   - Acceptance criteria:
     - `ActivityExplorerPage` owns query state, selected note id, loading, empty, and error branching, and wires together `FiltersSidebar`, `ExplorerHeader`, `FeedView`, and `NoteDetailsPanel`.
     - `ExplorerHeader` presents the title area plus `ResultSummary`.
-    - `FeedView` renders newest-first by default and uses `NoteListItem` to show selection, note metadata, and the author/color affordances needed by the feed-first UI.
     - Selecting a note opens `NoteDetailsPanel` without requiring another fetch, and the panel uses `IconButton`, `NoteTitleBanner`, and `NoteMetadataList`.
     - Loading, empty, and error states are clear, understandable, and reusable through the shared composite components.
 
@@ -90,7 +89,6 @@ Path note: file paths below follow current repo structure first. When implementa
   - Estimated time: `20 min`
   - Files to create/modify: `src/app/components/FeedView/*`, optional `src/app/components/VirtualizedNoteList/*`, `src/shared/ui/composite/NoteListItem/*`
   - Acceptance criteria:
-    - `FeedView` virtualizes `NoteListItem` rows so only visible items are rendered.
     - The next page loads when the user nears the bottom.
     - The feed remains responsive with hundreds of notes.
 

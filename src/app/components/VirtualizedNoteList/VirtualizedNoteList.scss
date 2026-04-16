@@ -22,23 +22,6 @@
   padding-block: 0.5rem;
 }
 
-.app-virtualized-note-list__item {
-  width: 100%;
-  padding-inline: var(--spacing-lg);
-}
-
-.app-virtualized-note-list__item--end {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.app-virtualized-note-list__item-inner {
-  padding-bottom: var(--spacing-sm);
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .app-virtualized-note-list__status {
   display: grid;
   justify-items: stretch;

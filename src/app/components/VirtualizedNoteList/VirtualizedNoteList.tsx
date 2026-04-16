@@ -1,11 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { List, type RowComponentProps } from 'react-window';
+import { List } from 'react-window';
 
 import { t } from '@shared/i18n';
 import { Button } from '@shared/ui/atomic/Button';
 import { Text } from '@shared/ui/atomic/Text';
 import { FeedLoadingState } from '../FeedLoadingState';
-import { NoteListItem } from '@shared/ui/composite/NoteListItem';
 import {
   getNeedsNextPage,
   getViewportHeight,
@@ -14,70 +13,12 @@ import {
   VIRTUAL_NOTE_LIST_OVERSCAN_COUNT,
   VIRTUAL_NOTE_LIST_ROW_GAP,
 } from './VirtualizedNoteList.handlers';
+import { VirtualizedNoteListRow } from './internal/VirtualizedNoteListRow';
 import type {
   VirtualizedNoteListProps,
-  VirtualizedNoteListRowProps,
 } from './VirtualizedNoteList.types';
 
 import './VirtualizedNoteList.scss';
-
-const VirtualizedNoteListRow = ({
-  ariaAttributes,
-  hasMore,
-  index,
-  notes,
-  onMeasureRow,
-  onSelectNote,
-  selectedNoteId,
-  style,
-}: RowComponentProps<VirtualizedNoteListRowProps>) => {
-  const note = notes[index];
-
-  if (!note) {
-    if (hasMore || index !== notes.length) {
-      return null;
-    }
-
-    return (
-      <div
-        {...ariaAttributes}
-        className="app-virtualized-note-list__item app-virtualized-note-list__item--end"
-        style={style}
-      >
-        <Text
-          aria-live="polite"
-          as="p"
-          color="tertiary"
-          size="sm"
-        >
-          {t('feed.state.endOfList')}
-        </Text>
-      </div>
-    );
-  }
-
-  return (
-    <div
-      {...ariaAttributes}
-      className="app-virtualized-note-list__item"
-      data-note-id={note.id}
-      style={style}
-    >
-      <div
-        ref={(element) => {
-          onMeasureRow(note.id, element);
-        }}
-        className="app-virtualized-note-list__item-inner"
-      >
-        <NoteListItem
-          note={note}
-          selected={note.id === selectedNoteId}
-          onSelect={onSelectNote}
-        />
-      </div>
-    </div>
-  );
-};
 
 const VirtualizedNoteList = ({
   ariaLabel,
@@ -92,9 +33,9 @@ const VirtualizedNoteList = ({
 }: VirtualizedNoteListProps) => {
   const loadMoreRequestedRef = useRef(false);
   const resizeObserversRef = useRef<Record<string, ResizeObserver>>({});
-  const [measuredHeights, setMeasuredHeights] = useState<Record<string, number>>(
-    {},
-  );
+  const [measuredHeights, setMeasuredHeights] = useState<
+    Record<string, number>
+  >({});
   const rowCount = notes.length + (hasMore ? 0 : 1);
 
   useEffect(() => {

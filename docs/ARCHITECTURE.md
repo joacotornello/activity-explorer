@@ -27,6 +27,61 @@ The backend is not meant to model production infrastructure. Its job is to make 
 - Maintain the selected note locally and open or close the details panel
 - Preserve visible focus when users move between sticky sidebar, feed, and details panel
 
+## Component folder structure
+
+The frontend component architecture is organized by responsibility: app-level containers in `src/app/components`, foundational primitives in `src/shared/ui/atomic`, and reusable composed patterns in `src/shared/ui/composite`.
+
+```text
+src/
+|-- app/
+|   `-- components/
+|       |-- ActivityExplorerPage/
+|       |-- ApplicationTopbar/
+|       |-- ExplorerHeader/
+|       |-- FeedLoadingState/
+|       |-- FiltersSidebar/
+|       |-- FiltersSidebarLoading/
+|       |-- NoteDetailsPanel/
+|       `-- VirtualizedNoteList/
+|           `-- internal/
+|               `-- VirtualizedNoteListRow/
+`-- shared/
+    `-- ui/
+        |-- atomic/
+        |   |-- Avatar/
+        |   |-- Badge/
+        |   |-- Button/
+        |   |-- Checkbox/
+        |   |-- ColorSwatch/
+        |   |-- IconButton/
+        |   |-- MetadataItem/
+        |   |-- Radio/
+        |   |-- Sidebar/
+        |   |-- SkeletonBlock/
+        |   |-- Surface/
+        |   |-- Text/
+        |   `-- VisuallyHidden/
+        `-- composite/
+            |-- AuthorFilterOption/
+            |-- Collapsible/
+            |-- ColorFilterOption/
+            |-- EmptyState/
+            |-- FilterSection/
+            |-- LoadingState/
+            |-- NoteListItem/
+            |-- NoteMetadataList/
+            |-- NoteTitleBanner/
+            |-- ResultSummary/
+            |-- SortOrderGroup/
+            `-- TimeRangeFilterGroup/
+```
+
+Reading this structure from top to bottom:
+
+- `app/components` owns page assembly, query wiring, responsive layout, and feature-level rendering.
+- `shared/ui/atomic` owns low-level visual primitives with minimal responsibility.
+- `shared/ui/composite` owns reusable combinations of atoms that express product patterns without becoming page containers.
+
 ### Backend
 
 - Load the dataset and expose typed JSON endpoints

@@ -53,6 +53,9 @@ Zustand, or a similar lightweight state library, would make more sense if there 
 ### Lightweight i18n without localization infrastructure
 The app should still centralize product copy so text does not end up hardcoded across feature components. That is useful even before true localization exists, because it improves consistency, makes review easier, and lowers the cost of future edits.
 
+### Atomic design style
+To ensure agile scalability into a Design System in the future, I have implemented basic Atomic Design for foundational components that combined with the tokens makes product components tinier and easier to read.
+
 ### Backend
 I chose a minimal backend instead of a plain `.json` file so I could better demonstrate pagination and frontend scalability concerns.
 

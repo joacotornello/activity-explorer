@@ -1,0 +1,22 @@
+.ui-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--mural-blue) 10%, var(--surface-secondary));
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+}
+
+.ui-avatar--sm {
+  width: 2.125rem;
+  height: 2.125rem;
+  font-size: var(--text-xs);
+}
+
+.ui-avatar--md {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: var(--text-sm);
+}

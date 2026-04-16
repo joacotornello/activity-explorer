@@ -1,0 +1,62 @@
+{
+  "name": "activity-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "yarn@4.12.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:tokens": "style-dictionary build --config tokens/style-dictionary.config.mjs",
+    "dev": "yarn build:tokens && concurrently -k -n client,server -c green,cyan \"yarn dev:client\" \"yarn dev:server\"",
+    "dev:client": "vite --host 0.0.0.0 --port 5173",
+    "dev:server": "tsx watch server/index.ts",
+    "build": "yarn build:tokens && yarn typecheck && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "start:server": "tsx server/index.ts",
+    "test": "jest --runInBand",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "lint": "eslint . --ext .ts,.tsx,.cjs"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.99.0",
+    "express": "^5.2.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-window": "2.2.7"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/jest-axe": "^3.5.9",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/supertest": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^8.57.1",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.15.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "jest": "^30.3.0",
+    "jest-axe": "^10.0.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0",
+    "style-dictionary": "^5.4.0",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
+  }
+}

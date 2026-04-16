@@ -1,0 +1,602 @@
+[
+  {
+    "id": "note_001",
+    "text": "Onboarding friction drops when the progress marker stays visible across steps. This should stay visible in activity feed for quick triage. When users see consistent progress markers, they are less likely to lose track of their workflow, which improves overall satisfaction. Additionally, keeping this visible helps new users understand the flow more intuitively, reducing onboarding time and confusion.",
+    "color": "yellow",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-04-15T18:00:00.000Z"
+  },
+  {
+    "id": "note_002",
+    "text": "Team found cluster of duplicate synthesis notes during handoff review. Follow-up needed before next stakeholder review.",
+    "color": "blue",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-04-15T01:00:00.000Z"
+  },
+  {
+    "id": "note_003",
+    "text": "Workshop participants reacted faster to examples than to abstract prompts. Worth highlighting in details panel once selection state lands. This insight suggests that concrete examples should be prioritized in future workshops. Participants also reported higher engagement when examples were visually distinct, indicating a need for better visual cues in the UI.",
+    "color": "green",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-04-14T08:00:00.000Z"
+  },
+  {
+    "id": "note_004",
+    "text": "Reviewers requested clearer ownership tags before next planning cycle. Could become default example for sorting behavior.",
+    "color": "red",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-04-13T15:00:00.000Z"
+  },
+  {
+    "id": "note_005",
+    "text": "Recent feedback highlights confusion around invite permissions. Useful seed note for pagination and count verification.",
+    "color": "purple",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-04-13T10:00:00.000Z"
+  },
+  {
+    "id": "note_006",
+    "text": "Users kept scrolling past status updates until timestamps became more prominent. Pairs well with author and color filters in tests.",
+    "color": "yellow",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-04-12T17:00:00.000Z"
+  },
+  {
+    "id": "note_007",
+    "text": "Affinity mapping surfaced stronger alignment after lane labels were simplified. Timestamp order matters because nearby events read as single narrative.",
+    "color": "blue",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-04-12T00:00:00.000Z"
+  },
+  {
+    "id": "note_008",
+    "text": "Cross-functional review flagged need for smaller batches in activity summaries. Should help exercise realistic copy lengths in feed cards.",
+    "color": "green",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-04-11T07:00:00.000Z"
+  },
+  {
+    "id": "note_009",
+    "text": "Board cleanup pass reduced noise before leadership playback. This should stay visible in activity feed for quick triage.",
+    "color": "red",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-04-11T02:00:00.000Z"
+  },
+  {
+    "id": "note_010",
+    "text": "Research playback showed observers value chronological context over raw volume. Follow-up needed before next stakeholder review.",
+    "color": "purple",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-04-10T09:00:00.000Z"
+  },
+  {
+    "id": "note_011",
+    "text": "QA noted repeated edge cases when multiple authors post in same minute. Worth highlighting in details panel once selection state lands. These edge cases can complicate activity tracking and may require additional logic to ensure accurate sorting and filtering. Addressing this will improve reliability for teams with high activity rates.",
+    "color": "yellow",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-04-09T16:00:00.000Z"
+  },
+  {
+    "id": "note_012",
+    "text": "Support themes suggest color labels should reinforce visual note cues. Could become default example for sorting behavior.",
+    "color": "blue",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-04-08T23:00:00.000Z"
+  },
+  {
+    "id": "note_013",
+    "text": "Sprint retro notes emphasize keeping filters obvious on smaller screens. Useful seed note for pagination and count verification.",
+    "color": "green",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-04-08T18:00:00.000Z"
+  },
+  {
+    "id": "note_014",
+    "text": "Discovery session produced enough follow-up threads to justify incremental loading. Pairs well with author and color filters in tests. Incremental loading not only improves performance but also enhances the user experience by reducing wait times. This approach is especially beneficial for boards with a large volume of notes and frequent updates.",
+    "color": "red",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-04-08T01:00:00.000Z"
+  },
+  {
+    "id": "note_015",
+    "text": "Facilitators want easier ways to spot newest notes without losing context. Timestamp order matters because nearby events read as single narrative. Providing visual indicators for new notes and grouping related events can help facilitators maintain context and streamline their review process. This feature is highly requested in feedback sessions.",
+    "color": "purple",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-04-07T08:00:00.000Z"
+  },
+  {
+    "id": "note_016",
+    "text": "Onboarding friction drops when the progress marker stays visible across steps. Should help exercise realistic copy lengths in feed cards.",
+    "color": "yellow",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-04-06T15:00:00.000Z"
+  },
+  {
+    "id": "note_017",
+    "text": "Team found cluster of duplicate synthesis notes during handoff review. This should stay visible in activity feed for quick triage.",
+    "color": "blue",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-04-06T10:00:00.000Z"
+  },
+  {
+    "id": "note_018",
+    "text": "Workshop participants reacted faster to examples than to abstract prompts. Follow-up needed before next stakeholder review.",
+    "color": "green",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-04-05T17:00:00.000Z"
+  },
+  {
+    "id": "note_019",
+    "text": "Reviewers requested clearer ownership tags before next planning cycle. Worth highlighting in details panel once selection state lands.",
+    "color": "red",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-04-05T00:00:00.000Z"
+  },
+  {
+    "id": "note_020",
+    "text": "Recent feedback highlights confusion around invite permissions. Could become default example for sorting behavior.",
+    "color": "purple",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-04-04T07:00:00.000Z"
+  },
+  {
+    "id": "note_021",
+    "text": "Users kept scrolling past status updates until timestamps became more prominent. Useful seed note for pagination and count verification.",
+    "color": "yellow",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-04-04T02:00:00.000Z"
+  },
+  {
+    "id": "note_022",
+    "text": "Affinity mapping surfaced stronger alignment after lane labels were simplified. Pairs well with author and color filters in tests.",
+    "color": "blue",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-04-03T09:00:00.000Z"
+  },
+  {
+    "id": "note_023",
+    "text": "Cross-functional review flagged need for smaller batches in activity summaries. Timestamp order matters because nearby events read as single narrative.",
+    "color": "green",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-04-02T16:00:00.000Z"
+  },
+  {
+    "id": "note_024",
+    "text": "Board cleanup pass reduced noise before leadership playback. Should help exercise realistic copy lengths in feed cards.",
+    "color": "red",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-04-01T23:00:00.000Z"
+  },
+  {
+    "id": "note_025",
+    "text": "Research playback showed observers value chronological context over raw volume. This should stay visible in activity feed for quick triage.",
+    "color": "purple",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-04-01T18:00:00.000Z"
+  },
+  {
+    "id": "note_026",
+    "text": "QA noted repeated edge cases when multiple authors post in same minute. Follow-up needed before next stakeholder review.",
+    "color": "yellow",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-04-01T01:00:00.000Z"
+  },
+  {
+    "id": "note_027",
+    "text": "Support themes suggest color labels should reinforce visual note cues. Worth highlighting in details panel once selection state lands.",
+    "color": "blue",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-03-31T08:00:00.000Z"
+  },
+  {
+    "id": "note_028",
+    "text": "Sprint retro notes emphasize keeping filters obvious on smaller screens. Could become default example for sorting behavior.",
+    "color": "green",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-03-30T15:00:00.000Z"
+  },
+  {
+    "id": "note_029",
+    "text": "Discovery session produced enough follow-up threads to justify incremental loading. Useful seed note for pagination and count verification.",
+    "color": "red",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-03-30T10:00:00.000Z"
+  },
+  {
+    "id": "note_030",
+    "text": "Facilitators want easier ways to spot newest notes without losing context. Pairs well with author and color filters in tests.",
+    "color": "purple",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-03-29T17:00:00.000Z"
+  },
+  {
+    "id": "note_031",
+    "text": "Onboarding friction drops when the progress marker stays visible across steps. Timestamp order matters because nearby events read as single narrative.",
+    "color": "yellow",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-03-29T00:00:00.000Z"
+  },
+  {
+    "id": "note_032",
+    "text": "Team found cluster of duplicate synthesis notes during handoff review. Should help exercise realistic copy lengths in feed cards.",
+    "color": "blue",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-03-28T07:00:00.000Z"
+  },
+  {
+    "id": "note_033",
+    "text": "Workshop participants reacted faster to examples than to abstract prompts. This should stay visible in activity feed for quick triage.",
+    "color": "green",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-03-28T02:00:00.000Z"
+  },
+  {
+    "id": "note_034",
+    "text": "Reviewers requested clearer ownership tags before next planning cycle. Follow-up needed before next stakeholder review.",
+    "color": "red",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-03-27T09:00:00.000Z"
+  },
+  {
+    "id": "note_035",
+    "text": "Recent feedback highlights confusion around invite permissions. Worth highlighting in details panel once selection state lands.",
+    "color": "purple",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-03-26T16:00:00.000Z"
+  },
+  {
+    "id": "note_036",
+    "text": "Users kept scrolling past status updates until timestamps became more prominent. Could become default example for sorting behavior.",
+    "color": "yellow",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-03-25T23:00:00.000Z"
+  },
+  {
+    "id": "note_037",
+    "text": "Affinity mapping surfaced stronger alignment after lane labels were simplified. Useful seed note for pagination and count verification.",
+    "color": "blue",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-03-25T18:00:00.000Z"
+  },
+  {
+    "id": "note_038",
+    "text": "Cross-functional review flagged need for smaller batches in activity summaries. Pairs well with author and color filters in tests.",
+    "color": "green",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-03-25T01:00:00.000Z"
+  },
+  {
+    "id": "note_039",
+    "text": "Board cleanup pass reduced noise before leadership playback. Timestamp order matters because nearby events read as single narrative.",
+    "color": "red",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-03-24T08:00:00.000Z"
+  },
+  {
+    "id": "note_040",
+    "text": "Research playback showed observers value chronological context over raw volume. Should help exercise realistic copy lengths in feed cards.",
+    "color": "purple",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-03-23T15:00:00.000Z"
+  },
+  {
+    "id": "note_041",
+    "text": "QA noted repeated edge cases when multiple authors post in same minute. This should stay visible in activity feed for quick triage.",
+    "color": "yellow",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-03-23T10:00:00.000Z"
+  },
+  {
+    "id": "note_042",
+    "text": "Support themes suggest color labels should reinforce visual note cues. Follow-up needed before next stakeholder review.",
+    "color": "blue",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-03-22T17:00:00.000Z"
+  },
+  {
+    "id": "note_043",
+    "text": "Sprint retro notes emphasize keeping filters obvious on smaller screens. Worth highlighting in details panel once selection state lands.",
+    "color": "green",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-03-22T00:00:00.000Z"
+  },
+  {
+    "id": "note_044",
+    "text": "Discovery session produced enough follow-up threads to justify incremental loading. Could become default example for sorting behavior.",
+    "color": "red",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-03-21T07:00:00.000Z"
+  },
+  {
+    "id": "note_045",
+    "text": "Facilitators want easier ways to spot newest notes without losing context. Useful seed note for pagination and count verification.",
+    "color": "purple",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-03-21T02:00:00.000Z"
+  },
+  {
+    "id": "note_046",
+    "text": "Onboarding friction drops when the progress marker stays visible across steps. Pairs well with author and color filters in tests.",
+    "color": "yellow",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-03-20T09:00:00.000Z"
+  },
+  {
+    "id": "note_047",
+    "text": "Team found cluster of duplicate synthesis notes during handoff review. Timestamp order matters because nearby events read as single narrative.",
+    "color": "blue",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-03-19T16:00:00.000Z"
+  },
+  {
+    "id": "note_048",
+    "text": "Workshop participants reacted faster to examples than to abstract prompts. Should help exercise realistic copy lengths in feed cards.",
+    "color": "green",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-03-18T23:00:00.000Z"
+  },
+  {
+    "id": "note_049",
+    "text": "Reviewers requested clearer ownership tags before next planning cycle. This should stay visible in activity feed for quick triage.",
+    "color": "red",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-03-18T18:00:00.000Z"
+  },
+  {
+    "id": "note_050",
+    "text": "Recent feedback highlights confusion around invite permissions. Follow-up needed before next stakeholder review.",
+    "color": "purple",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-03-18T01:00:00.000Z"
+  },
+  {
+    "id": "note_051",
+    "text": "Users kept scrolling past status updates until timestamps became more prominent. Worth highlighting in details panel once selection state lands.",
+    "color": "yellow",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-03-17T08:00:00.000Z"
+  },
+  {
+    "id": "note_052",
+    "text": "Affinity mapping surfaced stronger alignment after lane labels were simplified. Could become default example for sorting behavior.",
+    "color": "blue",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-03-16T15:00:00.000Z"
+  },
+  {
+    "id": "note_053",
+    "text": "Cross-functional review flagged need for smaller batches in activity summaries. Useful seed note for pagination and count verification.",
+    "color": "green",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-03-16T10:00:00.000Z"
+  },
+  {
+    "id": "note_054",
+    "text": "Board cleanup pass reduced noise before leadership playback. Pairs well with author and color filters in tests.",
+    "color": "red",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-03-15T17:00:00.000Z"
+  },
+  {
+    "id": "note_055",
+    "text": "Research playback showed observers value chronological context over raw volume. Timestamp order matters because nearby events read as single narrative.",
+    "color": "purple",
+    "author": {
+      "id": "user_1",
+      "name": "Sarah Chen"
+    },
+    "createdAt": "2026-03-15T00:00:00.000Z"
+  },
+  {
+    "id": "note_056",
+    "text": "QA noted repeated edge cases when multiple authors post in same minute. Should help exercise realistic copy lengths in feed cards.",
+    "color": "yellow",
+    "author": {
+      "id": "user_2",
+      "name": "Jorge Silva"
+    },
+    "createdAt": "2026-03-14T07:00:00.000Z"
+  },
+  {
+    "id": "note_057",
+    "text": "Support themes suggest color labels should reinforce visual note cues. This should stay visible in activity feed for quick triage.",
+    "color": "blue",
+    "author": {
+      "id": "user_3",
+      "name": "Mina Park"
+    },
+    "createdAt": "2026-03-14T02:00:00.000Z"
+  },
+  {
+    "id": "note_058",
+    "text": "Sprint retro notes emphasize keeping filters obvious on smaller screens. Follow-up needed before next stakeholder review.",
+    "color": "green",
+    "author": {
+      "id": "user_4",
+      "name": "Avery Johnson"
+    },
+    "createdAt": "2026-03-13T09:00:00.000Z"
+  },
+  {
+    "id": "note_059",
+    "text": "Discovery session produced enough follow-up threads to justify incremental loading. Worth highlighting in details panel once selection state lands.",
+    "color": "red",
+    "author": {
+      "id": "user_5",
+      "name": "Priya Patel"
+    },
+    "createdAt": "2026-03-12T16:00:00.000Z"
+  },
+  {
+    "id": "note_060",
+    "text": "Facilitators want easier ways to spot newest notes without losing context. Could become default example for sorting behavior.",
+    "color": "purple",
+    "author": {
+      "id": "user_6",
+      "name": "Noah Martinez"
+    },
+    "createdAt": "2026-03-11T23:00:00.000Z"
+  }
+]

@@ -1,0 +1,33 @@
+.ui-surface {
+  background: var(--card);
+}
+
+.ui-surface--sm {
+  padding: var(--spacing-sm);
+}
+
+.ui-surface--md {
+  padding: var(--spacing-md);
+}
+
+.ui-surface--lg {
+  padding: var(--spacing-lg);
+}
+
+.ui-surface--interactive {
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.ui-surface--interactive:hover {
+  border-color: var(--border-default);
+  box-shadow: var(--shadow-md);
+}
+
+.ui-surface.is-selected {
+  border-color: var(--selection-border);
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 1px var(--selection-border);
+}

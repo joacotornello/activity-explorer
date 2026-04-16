@@ -1,0 +1,51 @@
+.app-filters-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.app-filters-sidebar__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.app-filters-sidebar__title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.app-filters-sidebar__title-icon {
+  flex-shrink: 0;
+  color: var(--text-primary);
+}
+
+.app-filters-sidebar__title {
+  letter-spacing: -0.02em;
+}
+
+.app-filters-sidebar__summary {
+  margin-top: var(--spacing-xs);
+}
+
+.app-filters-sidebar__sections {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.app-filters-sidebar .ui-button--ghost {
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .app-filters-sidebar {
+    justify-content: center;
+  }
+
+  .app-filters-sidebar__sections{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

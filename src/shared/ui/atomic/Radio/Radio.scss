@@ -1,0 +1,37 @@
+.ui-radio {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.ui-radio.is-checked {
+  background-color: var(--selection-bg);
+}
+
+.ui-radio:has(input:focus-visible) {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+.ui-radio input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: var(--interactive-default);
+}
+
+.ui-radio__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  line-height: var(--line-height-normal);
+}
+
+.ui-radio.is-checked .ui-radio__label {
+  font-weight: var(--font-weight-semibold);
+}

@@ -1,0 +1,36 @@
+.ui-color-swatch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  border: 1px solid color-mix(in srgb, var(--border-default) 72%, transparent);
+  border-radius: var(--radius-sm);
+}
+
+.ui-color-swatch--sm {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.ui-color-swatch--md {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.ui-color-swatch--red {
+  background: var(--mural-red);
+}
+
+.ui-color-swatch--yellow {
+  background: var(--mural-yellow);
+}
+
+.ui-color-swatch--blue {
+  background: var(--mural-blue);
+}
+
+.ui-color-swatch--green {
+  background: var(--mural-green);
+}
+
+.ui-color-swatch--purple {
+  background: var(--mural-purple);
+}

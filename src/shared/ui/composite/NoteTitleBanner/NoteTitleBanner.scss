@@ -1,0 +1,28 @@
+.ui-note-title-banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: var(--banner-min-height, 3.5rem);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-xl);
+}
+
+.ui-note-title-banner--red {
+  background: var(--mural-red);
+}
+
+.ui-note-title-banner--yellow {
+  background: var(--mural-yellow);
+}
+
+.ui-note-title-banner--blue {
+  background: var(--mural-blue);
+}
+
+.ui-note-title-banner--green {
+  background: var(--mural-green);
+}
+
+.ui-note-title-banner--purple {
+  background: var(--mural-purple);
+}

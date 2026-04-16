@@ -1,0 +1,25 @@
+.ui-filter-section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.ui-filter-section__legend {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: calc(var(--spacing-sm) + 2px);
+  padding: 0;
+  color: var(--text-secondary);
+}
+
+.ui-filter-section__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--text-primary);
+}
+
+.ui-filter-section__body {
+  display: grid;
+  gap: var(--spacing-sm);
+}

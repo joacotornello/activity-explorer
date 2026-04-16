@@ -1,0 +1,14 @@
+.app-feed-view {
+  display: grid;
+  padding-top: var(--spacing-xs);
+  background: var(--surface-canvas);
+}
+
+@media (min-width: 901px) {
+  .app-feed-view {
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr);
+  }
+}
+

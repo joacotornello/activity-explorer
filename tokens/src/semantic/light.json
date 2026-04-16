@@ -1,0 +1,165 @@
+{
+  "surface": {
+    "primary": {
+      "value": "{natural.0}"
+    },
+    "secondary": {
+      "value": "{natural.50}"
+    },
+    "tertiary": {
+      "value": "{natural.100}"
+    },
+    "elevated": {
+      "value": "{natural.0}"
+    },
+    "canvas": {
+      "value": "{natural.100}"
+    }
+  },
+  "text": {
+    "primary": {
+      "value": "{natural.900}"
+    },
+    "secondary": {
+      "value": "{natural.700}"
+    },
+    "tertiary": {
+      "value": "{natural.600}"
+    },
+    "inverse": {
+      "value": "{natural.0}"
+    },
+    "disabled": {
+      "value": "{natural.400}"
+    }
+  },
+  "border": {
+    "subtle": {
+      "value": "{natural.300}"
+    },
+    "default": {
+      "value": "{natural.400}"
+    },
+    "strong": {
+      "value": "{natural.600}"
+    }
+  },
+  "focus-ring": {
+    "value": "{mural.blue}"
+  },
+  "focus-ring-width": {
+    "value": "3px"
+  },
+  "focus-ring-offset": {
+    "value": "2px"
+  },
+  "selection": {
+    "bg": {
+      "value": "#3399FF1A"
+    },
+    "border": {
+      "value": "{interactive.default}"
+    }
+  },
+  "note": {
+    "min": {
+      "width": {
+        "value": "200px"
+      }
+    },
+    "max": {
+      "width": {
+        "value": "280px"
+      }
+    }
+  },
+  "header": {
+    "height": {
+      "value": "64px"
+    }
+  },
+  "sidebar": {
+    "width": {
+      "value": "280px"
+    }
+  },
+  "drawer": {
+    "width": {
+      "value": "400px"
+    }
+  },
+  "interactive": {
+    "default": {
+      "value": "{mural.blue}"
+    },
+    "hover": {
+      "value": "#2A7ACC"
+    },
+    "active": {
+      "value": "#1F5C99"
+    },
+    "disabled": {
+      "value": "{natural.400}"
+    }
+  },
+  "background": {
+    "value": "{surface.primary}"
+  },
+  "foreground": {
+    "value": "{text.primary}"
+  },
+  "card": {
+    "value": "{surface.elevated}"
+  },
+  "card-foreground": {
+    "value": "{text.primary}"
+  },
+  "popover": {
+    "value": "{surface.elevated}"
+  },
+  "popover-foreground": {
+    "value": "{text.primary}"
+  },
+  "primary": {
+    "value": "{mural.black}"
+  },
+  "primary-foreground": {
+    "value": "{text.inverse}"
+  },
+  "secondary": {
+    "value": "{natural.100}"
+  },
+  "secondary-foreground": {
+    "value": "{text.primary}"
+  },
+  "muted": {
+    "value": "{natural.200}"
+  },
+  "muted-foreground": {
+    "value": "{text.secondary}"
+  },
+  "accent": {
+    "value": "{natural.100}"
+  },
+  "accent-foreground": {
+    "value": "{text.primary}"
+  },
+  "destructive": {
+    "value": "#DC3545"
+  },
+  "destructive-foreground": {
+    "value": "{text.inverse}"
+  },
+  "input": {
+    "value": "transparent"
+  },
+  "input-background": {
+    "value": "{surface.secondary}"
+  },
+  "switch-background": {
+    "value": "{natural.400}"
+  },
+  "ring": {
+    "value": "{focus-ring}"
+  }
+}

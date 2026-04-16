@@ -1,0 +1,15 @@
+.ui-author-filter-option {
+  width: 100%;
+}
+
+.ui-author-filter-option__label {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.ui-author-filter-option__name {
+  font-weight: var(--font-weight-medium);
+}

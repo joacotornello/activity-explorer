@@ -1,0 +1,34 @@
+.ui-sidebar {
+  position: fixed;
+  inset: 0;
+  z-index: 700;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ui-sidebar__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: color-mix(in srgb, var(--natural-900) 18%, transparent);
+  cursor: pointer;
+}
+
+.ui-sidebar__panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, var(--drawer-width));
+  height: 100vh;
+  overflow-y: auto;
+  scroll-padding-block-start: calc(var(--spacing-xl) * 2);
+}
+
+@media (max-width: 720px) {
+  .ui-sidebar {
+    padding: 0;
+  }
+
+  .ui-sidebar__panel {
+    width: min(100%, 100vw);
+  }
+}

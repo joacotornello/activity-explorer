@@ -1,0 +1,38 @@
+.app-explorer-header {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface-primary);
+}
+
+.app-explorer-header__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+.app-explorer-header__title {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.app-explorer-header .ui-result-summary {
+  margin-top: var(--spacing-xs);
+  font-size: var(--text-base);
+  line-height: var(--line-height-tight);
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .app-explorer-header {
+    padding: var(--spacing-lg);
+  }
+
+  .app-explorer-header__top {
+    flex-direction: column;
+  }
+
+  .app-explorer-header__title {
+    font-size: var(--text-2xl);
+  }
+}

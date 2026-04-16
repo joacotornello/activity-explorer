@@ -1,0 +1,10 @@
+.ui-color-filter-option__label {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: calc(var(--spacing-sm) + 2px);
+}
+
+.ui-color-filter-option__name {
+  font-weight: var(--font-weight-semibold);
+}

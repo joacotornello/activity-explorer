@@ -1,0 +1,13 @@
+.ui-collapsible {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.ui-collapsible__content {
+  display: grid;
+  gap: var(--spacing-xs);
+}
+
+.ui-collapsible__toggle {
+  justify-self: center;
+}

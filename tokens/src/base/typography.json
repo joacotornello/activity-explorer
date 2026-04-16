@@ -1,0 +1,64 @@
+{
+  "default": {
+    "font": {
+      "family": {
+        "value": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+      }
+    }
+  },
+  "font": {
+    "size": {
+      "value": "16px"
+    },
+    "weight": {
+      "normal": {
+        "value": "400"
+      },
+      "medium": {
+        "value": "500"
+      },
+      "semibold": {
+        "value": "600"
+      },
+      "bold": {
+        "value": "700"
+      }
+    }
+  },
+  "line": {
+    "height": {
+      "tight": {
+        "value": "1.25"
+      },
+      "normal": {
+        "value": "1.5"
+      },
+      "relaxed": {
+        "value": "1.75"
+      }
+    }
+  },
+  "text": {
+    "3xl": {
+      "value": "32px"
+    },
+    "2xl": {
+      "value": "24px"
+    },
+    "xl": {
+      "value": "20px"
+    },
+    "lg": {
+      "value": "18px"
+    },
+    "base": {
+      "value": "16px"
+    },
+    "sm": {
+      "value": "14px"
+    },
+    "xs": {
+      "value": "12px"
+    }
+  }
+}

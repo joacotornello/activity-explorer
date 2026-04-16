@@ -1,0 +1,100 @@
+{
+  "app": {
+    "title": "Activity Explorer",
+    "meta": {
+      "title": "Activity Explorer | Explore note activity by author, color, and time"
+    },
+    "summary": {
+      "notes_one": "{{count}} note",
+      "notes_other": "{{count}} notes",
+      "activeFilters_one": "{{count}} active filter",
+      "activeFilters_other": "{{count}} active filters",
+      "combined": "{{notes}} - {{filters}}"
+    },
+    "modes": {
+      "feed": "Feed"
+    }
+  },
+  "common": {
+    "actions": {
+      "retry": "Retry",
+      "selected": "Selected"
+    },
+    "status": {
+      "loading": "Loading..."
+    }
+  },
+  "filters": {
+    "title": "Filters",
+    "clear": "Clear",
+    "sections": {
+      "authors": "Authors",
+      "colors": "Colors",
+      "timeRange": "Time Range"
+    },
+    "state": {
+      "noAuthors": "No authors available",
+      "noColors": "No colors available"
+    },
+    "aria": {
+      "panel": "Filters panel",
+      "clearAll": "Clear all filters",
+      "expandAuthors": "Show all authors"
+    }
+  },
+  "colors": {
+    "red": "Red",
+    "yellow": "Yellow",
+    "blue": "Blue",
+    "green": "Green",
+    "purple": "Purple"
+  },
+  "timeRange": {
+    "allTime": "All time",
+    "today": "Today",
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days"
+  },
+  "feed": {
+    "aria": {
+      "region": "Activity feed",
+      "list": "Notes list",
+      "item": "Note from {{author}}, color {{color}}, created {{createdAt}}",
+      "selectedItem": "Selected note from {{author}}, color {{color}}, created {{createdAt}}"
+    },
+    "state": {
+      "loading": "Loading notes...",
+      "emptyTitle": "No notes match these filters",
+      "emptyDescription": "Try clearing one or more filters.",
+      "loadMoreError": "Unable to load more notes. Try again.",
+      "endOfList": "You've reached the end of the feed"
+    },
+    "badges": {
+      "selected": "Selected"
+    }
+  },
+  "noteDetails": {
+    "title": "Note Details",
+    "fields": {
+      "author": "Author",
+      "color": "Color",
+      "created": "Created"
+    },
+    "actions": {
+      "close": "Close note details"
+    }
+  },
+  "states": {
+    "error": {
+      "title": "Unable to load activity",
+      "description": "Try again in a moment.",
+      "retry": "Retry"
+    }
+  },
+  "a11y": {
+    "selection": {
+      "selected": "Selected",
+      "notSelected": "Not selected"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.app-application-topbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: var(--header-height);
+  padding-inline: var(--spacing-xl);
+  background: var(--mural-black);
+}
+
+.app-application-topbar__skip-link {
+  position: absolute;
+  left: var(--spacing-xl);
+  top: var(--spacing-lg);
+  z-index: 1;
+  transform: translateY(-200%);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-default);
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.app-application-topbar__skip-link:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+  transform: translateY(0);
+}
+
+.app-application-topbar__title {
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 720px) {
+  .app-application-topbar__skip-link {
+    left: var(--spacing-lg);
+    top: var(--spacing-md);
+  }
+}

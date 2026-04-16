@@ -1,0 +1,70 @@
+.ui-text {
+  margin: 0;
+  color: var(--text-primary);
+  line-height: var(--line-height-normal);
+  font-family: var(--default-font-family);
+}
+
+.ui-text--primary {
+  color: var(--text-primary);
+}
+
+.ui-text--secondary {
+  color: var(--text-secondary);
+}
+
+.ui-text--tertiary {
+  color: var(--text-tertiary);
+}
+
+.ui-text--inverse {
+  color: var(--text-inverse);
+}
+
+.ui-text--disabled {
+  color: var(--text-disabled);
+}
+
+.ui-text--normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.ui-text--medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.ui-text--semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.ui-text--bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.ui-text--xs {
+  font-size: var(--text-xs);
+}
+
+.ui-text--sm {
+  font-size: var(--text-sm);
+}
+
+.ui-text--md {
+  font-size: var(--text-base);
+}
+
+.ui-text--lg {
+  font-size: var(--text-lg);
+}
+
+.ui-text--xl {
+  font-size: var(--text-xl);
+}
+
+.ui-text--2xl {
+  font-size: var(--text-2xl);
+}
+
+.ui-text--3xl {
+  font-size: var(--text-3xl);
+}

@@ -1,0 +1,40 @@
+.app-filters-sidebar-loading {
+  gap: var(--spacing-xl);
+}
+
+.app-filters-sidebar-loading__header,
+.app-filters-sidebar-loading__section,
+.app-filters-sidebar-loading__options {
+  display: grid;
+}
+
+.app-filters-sidebar-loading__header,
+.app-filters-sidebar-loading__section {
+  gap: var(--spacing-md);
+}
+
+.app-filters-sidebar-loading__options {
+  gap: var(--spacing-sm);
+}
+
+.app-filters-sidebar-loading__title-row,
+.app-filters-sidebar-loading__section-header,
+.app-filters-sidebar-loading__option {
+  display: grid;
+  align-items: center;
+}
+
+.app-filters-sidebar-loading__title-row,
+.app-filters-sidebar-loading__section-header {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.app-filters-sidebar-loading__option {
+  grid-template-columns: auto auto minmax(0, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.app-filters-sidebar-loading__option--radio {
+  grid-template-columns: auto minmax(0, 1fr);
+}

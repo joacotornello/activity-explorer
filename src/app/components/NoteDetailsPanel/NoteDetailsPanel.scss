@@ -1,0 +1,33 @@
+.app-note-details-panel {
+  position: sticky;
+  top: var(--spacing-xl);
+  display: grid;
+  gap: var(--spacing-xl);
+  align-content: start;
+  height: 100%;
+}
+
+.app-note-details-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.app-note-details-panel__eyebrow {
+  margin: 0 0 var(--spacing-xs);
+  color: var(--text-tertiary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.app-note-details-panel__title {
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.app-note-details-panel__body {
+  margin: 0;
+  color: var(--text-primary);
+  text-wrap: pretty;
+}

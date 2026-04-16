@@ -1,0 +1,13 @@
+.app-shell {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+@media (min-width: 901px) {
+  .app-shell {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: 100vh;
+    height: 100svh;
+  }
+}

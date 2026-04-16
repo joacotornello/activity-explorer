@@ -1,0 +1,40 @@
+@keyframes ui-skeleton-block-shimmer {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+.ui-skeleton-block {
+  display: block;
+  width: var(--ui-skeleton-width, 100%);
+  max-width: 100%;
+  height: var(--ui-skeleton-height, var(--spacing-md));
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    var(--surface-tertiary) 0%,
+    color-mix(in srgb, var(--surface-primary) 68%, var(--surface-tertiary)) 50%,
+    var(--surface-tertiary) 100%
+  );
+  background-size: 220% 100%;
+  animation: ui-skeleton-block-shimmer 1400ms ease-in-out infinite;
+}
+
+.ui-skeleton-block--rectangle {
+  border-radius: var(--radius-md);
+}
+
+.ui-skeleton-block--circle {
+  border-radius: var(--radius-full);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-skeleton-block {
+    animation: none;
+    background-position: 50% 0;
+  }
+}

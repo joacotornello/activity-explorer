@@ -1,0 +1,74 @@
+.app-virtualized-note-list {
+  display: grid;
+  gap: var(--spacing-sm);
+  min-height: 0;
+}
+
+.app-virtualized-note-list__viewport {
+  height: clamp(
+    var(--note-list-min-height, 26rem),
+    calc(100svh - var(--note-list-offset, 12rem)),
+    var(--note-list-max-height, 56rem)
+  );
+  scroll-padding-block-start: calc(var(--spacing-xl) * 2);
+}
+
+.app-virtualized-note-list__list {
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  padding-right: var(--spacing-xs);
+  outline: none;
+  box-sizing: border-box;
+  padding-block: 0.5rem;
+}
+
+.app-virtualized-note-list__item {
+  width: 100%;
+  padding-inline: var(--spacing-lg);
+}
+
+.app-virtualized-note-list__item--end {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.app-virtualized-note-list__item-inner {
+  padding-bottom: var(--spacing-sm);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-virtualized-note-list__status {
+  display: grid;
+  justify-items: stretch;
+  padding-inline: var(--spacing-lg);
+  padding-top: var(--spacing-xs);
+}
+
+.app-virtualized-note-list__status--error {
+  gap: var(--spacing-sm);
+  justify-items: start;
+}
+
+@media (min-width: 901px) {
+  .app-virtualized-note-list {
+    height: 100%;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  .app-virtualized-note-list__viewport {
+    height: 100%;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-virtualized-note-list__viewport {
+    height: clamp(
+      var(--note-list-mobile-min-height, 22rem),
+      calc(100svh - var(--note-list-mobile-offset, 10rem)),
+      var(--note-list-mobile-max-height, 44rem)
+    );
+  }
+}
